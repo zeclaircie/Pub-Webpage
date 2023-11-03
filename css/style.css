@@ -1,0 +1,153 @@
+html {
+    font-family: "Verdana", sans-serif;
+    background-color: #110921;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    align-self: center;
+}
+
+main{
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #110921;
+    padding: 1rem;
+    width: 100%
+}
+
+h1{
+    width: 40%;
+    padding-left: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
+    text-shadow: 4px 4px 6px #BF267A;
+    color:ghostwhite;
+    font-size: 3.5rem;
+    font-family: "Neonderthaw", sans-serif;
+    margin: 0;
+    padding-top: 2.5rem
+}
+
+nav {
+    width: 60%;
+    margin: 0;
+    padding: 2rem 2rem 0 1rem;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+li a {
+    border: 3px solid lightgrey;
+    border-radius: 1rem;
+    color: lightgrey;
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    line-height: 2.5rem;
+    text-decoration: none;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+li a:hover {
+    text-shadow: 2px 2px 4px #127CA6;
+    color: ghostwhite;
+    box-shadow: 3px 3px 15px #127CA6;
+    border-color: ghostwhite;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    border-radius: 2rem;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+}
+
+@keyframes blinking {
+    41% {text-shadow: 5px 5px 55px #0cffe7}
+    42% {text-shadow: 5px 5px 40px #0cffe7}
+    43% {text-shadow: 5px 5px 55px #0cffe7}
+    44% {text-shadow: 5px 5px 40px #0cffe7}
+    45% {text-shadow: 5px 5px 55px #0cffe7}
+}
+
+section h2 {
+    width: 100%;
+    margin-top: 6rem;
+    text-align: center;
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 5rem;
+    color: ghostwhite;
+    text-shadow: 5px 5px 60px #0cffe7;
+    animation: blinking 3s infinite alternate;
+}
+
+article {
+    width: 50%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+figure {
+    float: left;
+    margin: 0 1rem 1rem 0;
+
+}
+
+img {
+    border-radius: 1rem;
+    border: 1px dimgrey solid;
+    box-shadow: 2px 2px 5px dimgrey;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: small;
+    text-align: center;
+}
+
+
+aside {
+    width: 20%;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+form {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
