@@ -3,7 +3,19 @@ html {
     background-color: #110921;
 }
 
-.container {
+.home {
+    width: 60%;
+    margin: auto;
+    align-self: center;
+}
+
+.drinks {
+    width: 60%;
+    margin: auto;
+    align-self: center;
+}
+
+.about {
     width: 60%;
     margin: auto;
     align-self: center;
@@ -11,6 +23,7 @@ html {
 
 main{
     width: 100%;
+    padding-bottom: 3rem;
 }
 
 body {
@@ -29,9 +42,9 @@ h1{
     padding-left: 2rem;
     line-height: 2.5rem;
     text-align: left;
-    text-shadow: 4px 4px 6px #BF267A;
+    text-shadow: 8px 8px 20px #BF267A;
     color:ghostwhite;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-family: "Neonderthaw", sans-serif;
     margin: 0;
     padding-top: 2.5rem
@@ -72,9 +85,12 @@ li a:hover {
 }
 
 main {
-    padding: 1rem;
+    padding: 1rem 1rem 5rem 1rem;
     display: flex;
-    border-radius: 2rem;
+}
+
+.about main {
+    padding: 1rem;
 }
 
 section {
@@ -84,12 +100,14 @@ section {
     background-repeat: no-repeat;
 }
 
+
 @keyframes blinking {
-    41% {text-shadow: 5px 5px 55px #0cffe7}
-    42% {text-shadow: 5px 5px 40px #0cffe7}
-    43% {text-shadow: 5px 5px 55px #0cffe7}
-    44% {text-shadow: 5px 5px 40px #0cffe7}
-    45% {text-shadow: 5px 5px 55px #0cffe7}
+    41% {text-shadow: 5px 5px 55px #28ffe6
+    }
+    42% {text-shadow: 5px 5px 40px #28ffe6}
+    43% {text-shadow: 5px 5px 55px #28ffe6}
+    44% {text-shadow: 5px 5px 60px #28ffe6}
+    45% {text-shadow: 5px 5px 55px #28ffe6}
 }
 
 section h2 {
@@ -99,45 +117,84 @@ section h2 {
     font-family: "Tilt Neon", sans-serif;
     font-size: 5rem;
     color: ghostwhite;
-    text-shadow: 5px 5px 60px #0cffe7;
+    text-shadow: 5px 5px 60px #28ffe6;
     animation: blinking 3s infinite alternate;
 }
 
-article {
+
+.home section h3{
+    color: #43ffe9;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+
+.home section p{
+    color: #43ffe9;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin:0;
+}
+
+.drinks h3 {
+    text-align: center;
+}
+
+.drinks img{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+
+}
+
+.drinks article p{
+    text-wrap: normal;
+}
+
+.drinks article {
     width: 50%;
-    padding: 0.5rem;
+    padding: 1rem;
     box-sizing: border-box;
+    color: ghostwhite;
+    display: block;
+    border: 3px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #43FFE9;
 }
 
-figure {
-    float: left;
-    margin: 0 1rem 1rem 0;
-
+.about article {
+    width: 100%;
+    padding: 2rem 8rem 2rem 8rem;
+    box-sizing: border-box;
+    color: ghostwhite;
+    text-align: justify;
 }
 
-img {
+
+.home img {
     border-radius: 1rem;
     border: 1px dimgrey solid;
     box-shadow: 2px 2px 5px dimgrey;
     width: 100%;
     height: auto;
+    margin: 2rem 0 2rem 0;
+    align-self: center;
 }
 
-figcaption {
-    font-size: small;
-    text-align: center;
-}
-
-
-aside {
-    width: 20%;
-}
 
 footer {
-    padding: 1rem;
+    padding: 1rem 1rem 4rem 1rem;
     text-align: center;
 }
 
+footer h3 {
+    color: ghostwhite;
+}
 
 form {
     width: 30%;
@@ -150,4 +207,6 @@ input {
     display: block;
     width: 100%;
     padding: 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px #43FFE9;
 }
