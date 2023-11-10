@@ -1,30 +1,14 @@
 html {
     font-family: "Verdana", sans-serif;
-    background-color: #110921;
+    background-color: #0c031c;
 }
 
-.home {
+.container {
     width: 60%;
     margin: auto;
     align-self: center;
 }
 
-.drinks {
-    width: 60%;
-    margin: auto;
-    align-self: center;
-}
-
-.about {
-    width: 60%;
-    margin: auto;
-    align-self: center;
-}
-
-main{
-    width: 100%;
-    padding-bottom: 3rem;
-}
 
 body {
     margin: 0;
@@ -32,33 +16,43 @@ body {
 
 header {
     display: flex;
-    background-color: #110921;
+    background-color: #0c031c;
     padding: 1rem;
-    width: 100%
+    width: 60%;
+    position: fixed;
+}
+
+@keyframes blinking {
+    41% {text-shadow: 8px 8px 55px #fe6ebf
+    }
+    42% {text-shadow: 8px 8px 35px #fe6ebf}
+    43% {text-shadow: 8px 8px 55px #fe6ebf}
+    45% {text-shadow: 8px 8px 60px #fe6ebf}
+    46% {text-shadow: 8px 8px 55px #fe6ebf}
 }
 
 h1{
-    width: 40%;
+    width: 50%;
     padding-left: 2rem;
     line-height: 2.5rem;
     text-align: left;
-    text-shadow: 8px 8px 20px #BF267A;
+    text-shadow: 8px 8px 60px #fe6ebf;
     color:ghostwhite;
     font-size: 4.5rem;
     font-family: "Neonderthaw", sans-serif;
     margin: 0;
-    padding-top: 2.5rem
+    padding-top: 2.5rem;
+    animation: blinking 3s infinite alternate;
 }
 
 nav {
-    width: 60%;
+    width: 50%;
     margin: 0;
     padding: 2rem 2rem 0 1rem;
 }
 
 ul {
     display: flex;
-    list-style-type: none;
     justify-content: space-evenly;
     width: 100%;
 
@@ -85,11 +79,12 @@ li a:hover {
 }
 
 main {
-    padding: 1rem 1rem 5rem 1rem;
-    display: flex;
+    display: block;
+    width: 100%;
+    padding: 4rem 1rem 3rem 1rem;
 }
 
-.about main {
+#about main {
     padding: 1rem;
 }
 
@@ -98,31 +93,22 @@ section {
     display: flex;
     flex-wrap: wrap;
     background-repeat: no-repeat;
+    padding-top: 3.5rem;
 }
 
-
-@keyframes blinking {
-    41% {text-shadow: 5px 5px 55px #28ffe6
-    }
-    42% {text-shadow: 5px 5px 40px #28ffe6}
-    43% {text-shadow: 5px 5px 55px #28ffe6}
-    44% {text-shadow: 5px 5px 60px #28ffe6}
-    45% {text-shadow: 5px 5px 55px #28ffe6}
-}
 
 section h2 {
     width: 100%;
     margin-top: 6rem;
     text-align: center;
     font-family: "Tilt Neon", sans-serif;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: ghostwhite;
-    text-shadow: 5px 5px 60px #28ffe6;
-    animation: blinking 3s infinite alternate;
+    text-shadow: 5px 5px 40px #28ffe6;
 }
 
 
-.home section h3{
+#home h3{
     color: #43ffe9;
     text-align: center;
     width: 100%;
@@ -132,7 +118,7 @@ section h2 {
 }
 
 
-.home section p{
+#home p{
     color: #43ffe9;
     text-align: center;
     width: 100%;
@@ -141,22 +127,22 @@ section h2 {
     margin:0;
 }
 
-.drinks h3 {
+#drinks h3 {
     text-align: center;
 }
 
-.drinks img{
+#drinks img{
     margin-left: auto;
     margin-right: auto;
     width:100%;
 
 }
 
-.drinks article p{
+#drinks article p{
     text-wrap: normal;
 }
 
-.drinks article {
+#drinks article {
     width: 50%;
     padding: 1rem;
     box-sizing: border-box;
@@ -164,10 +150,10 @@ section h2 {
     display: block;
     border: 3px solid;
     border-radius: 10px;
-    box-shadow: 0 0 20px #43FFE9;
+    box-shadow: 0 0 14px #43FFE9;
 }
 
-.about article {
+#about article {
     width: 100%;
     padding: 2rem 8rem 2rem 8rem;
     box-sizing: border-box;
@@ -176,7 +162,7 @@ section h2 {
 }
 
 
-.home img {
+#home img {
     border-radius: 1rem;
     border: 1px dimgrey solid;
     box-shadow: 2px 2px 5px dimgrey;

@@ -12,19 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="home">
+<div class="container">
     <header>
         <h1>Donovan's</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="about.html">About the place</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#about">About the place</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="home">
             <h2>Donovan's Club</h2>
             <h3>Opening Hours</h3>
             <p>Mon: Closed</p>
@@ -32,9 +32,52 @@
             <p>Fri-Sun: 17:00-5:00</p>
             <img src="images/drinks.jpg" alt="A picture with neon light cocktails.">
         </section>
+        <section id="drinks">
+            <h2>Drink List</h2>
+            <article>
+                <h3>Red Strings</h3>
+                <img src="/images/redstring.jpg" alt="a picture of red cocktail">
+                <p>Raspberry Vodka, Triple Sec, Grenadine Syrup, Cranberry Juice, Fresh Raspberries, Ice</p>
+                <p>You can't change where the strings go.</p>
+            </article>
+            <article>
+                <h3>Amnesia Pill</h3>
+                <img src="/images/forget.jpg" alt="an image of brown cocktail">
+                <p>Gin, elderflower liqueur, fresh Lemon juice, orange bitters, lemon twist, ice</p>
+                <p>For someone or yourself?</p>
+            </article>
+            <article>
+                <h3>Circuit Sour</h3>
+                <img src="/images/sour.jpg" alt="a glass of sour whiskey">
+                <p> Whiskey, lemon juice, simple syrup, ice</p>
+                <p>Simple and classic sour whiskey.</p>
+            </article>
+            <article>
+                <h3>Brandies, I love you too</h3>
+                <img src="/images/dark.jpg" alt="a glass of dark cocktail with cherry">
+                <p>Rum, amaretto liqueur, sweet vermouth, Angostura bitters, maraschino cherry, ice</p>
+                <p>Dedicated to an old friend.</p>
+            </article>
+        </section>
+        <section id="about">
+            <h2>About the Place</h2>
+            <article>
+                <p>The club owner Donovan opened this place in memory of Brandies, an old friend and the love of his
+                    life.</p>
+                <p>This page is inspired by adventure game "The Red Strings Club" by Deconstructteam. The Red Strings
+                    Club is an adventure game set in a cyberpunk world. Donovan, Brandeis, and Akara-184 are working
+                    together to stop Supercontinent from releasing a system known as Social Psyche Welfare, which alters
+                    the minds of all implanted humans in order to eliminate "negative emotions".</p>
+            </article>
+        </section>
     </main>
     <footer>
-
+        <h3>Leave Your Message</h3>
+        <form action="#">
+            <input type="text" name="name" placeholder="What's your name?">
+            <input type="text" name="message" placeholder="What do you want to say?">
+            <input type="submit" value="Send">
+        </form>
     </footer>
 </div>
 </body>
