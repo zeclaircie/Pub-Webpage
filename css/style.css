@@ -161,7 +161,7 @@ section h2 {
     box-shadow: 0 0 14px #43FFE9;
 }
 
-#about article {
+#introduction {
     width: 100%;
     padding: 2rem 8rem 2rem 8rem;
     box-sizing: border-box;
@@ -169,12 +169,7 @@ section h2 {
     text-align: justify;
     font-size: 1.2rem;
     line-height: 1.5;
-    border: 2px solid ghostwhite;
-    border-radius: 4rem;
-    margin: 0 3rem 3rem 3rem;
-    background-color: #0c031c;
-    box-shadow: 0 0 14px #43FFE9;
-
+    text-shadow: 1px 1px #0c031c;
 }
 
 
