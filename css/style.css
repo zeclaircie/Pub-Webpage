@@ -161,9 +161,10 @@ section h2 {
     box-shadow: 0 0 14px #43FFE9;
 }
 
-#introduction {
+#about p {
     width: 100%;
-    padding: 2rem 8rem 2rem 8rem;
+    padding: 2rem 9rem 2rem 9rem;
+    margin:0;
     box-sizing: border-box;
     color: ghostwhite;
     text-align: justify;
