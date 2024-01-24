@@ -1,2 +1,2 @@
 # Pub-Webpage
-HTML &amp; CSS assignment for Metropolia Software 2
+A web page inspired by The Red Strings Club.
